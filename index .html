@@ -1,0 +1,1470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Room Rewrite | Premium room decor</title>
+    <meta
+      name="description"
+      content="Room Rewrite: posters, calendars and wall art for every mood."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+ 
+  <body data-whatsapp="254769694897" data-email="vicohawi@gmail.com">
+    <!-- ===== ANNOUNCEMENT BAR ===== -->
+    <div class="bar">New: the 2027 wall calendar is here</div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+      <button class="ib" id="mo" aria-expanded="false" aria-controls="menu">
+        <svg
+          width="22"
+          height="14"
+          viewBox="0 0 22 14"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M0 1h22M0 7h22M0 13h22" />
+        </svg>
+        Menu
+      </button>
+
+      <a class="brand" href="#top">Room Rewrite</a>
+
+      <button class="ib" id="cb" aria-label="Open cart">
+        Cart <span class="cnt" id="cn">0</span>
+      </button>
+    </header>
+
+    <!-- ===== MENU PANEL ===== -->
+    <div id="menu" hidden role="dialog" aria-label="Menu">
+      <div class="mt">
+        <b>MENU</b>
+        <button class="ib" id="mc" aria-label="Close menu">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 3l16 16M19 3L3 19" />
+          </svg>
+        </button>
+      </div>
+
+      <label
+        class="sr"
+        style="text-transform: none; letter-spacing: 0; font-weight: 400"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="9" cy="9" r="6" />
+          <path d="M14 14l5 5" />
+        </svg>
+        <input
+          id="q"
+          type="search"
+          placeholder="Search posters, calendars"
+          aria-label="Search products"
+        />
+      </label>
+
+      <!-- MENU LINKS: edit the names, or copy a whole <li> to add a link -->
+      <div class="ey">Explore</div>
+      <ul class="ml" id="ml">
+        <li>
+          <a href="#top">
+            <small>01</small>Home
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 10h14M11 4l6 6-6 6" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#shop">
+            <small>02</small>Shop
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 10h14M11 4l6 6-6 6" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#feels">
+            <small>03</small>Shop by feel
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 10h14M11 4l6 6-6 6" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#calendar">
+            <small>04</small>Calendar
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 10h14M11 4l6 6-6 6" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <small>05</small>About
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 10h14M11 4l6 6-6 6" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <small>06</small>Contact us
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 10h14M11 4l6 6-6 6" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <!--
+        TRENDING NOW
+        This card is a copy for display. Its data-id must match a product
+        in the Shop section. Clicking it opens that product's popup.
+      -->
+      <div class="ey">Trending now</div>
+      <div id="trend">
+        <a class="pc" href="#" data-id="7">
+          <span class="bd">Best seller</span>
+          <img
+            src="images/iceman poster.jpg"
+            alt="Iceman Album Poster"
+            loading="lazy"
+            decoding="async"
+            width="300"
+            height="400"
+          />
+          <div class="pi">
+            <b>Iceman Album Poster</b>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ===== CART AND CHECKOUT PANEL ===== -->
+    <div id="cart" hidden role="dialog" aria-label="Cart">
+      <div class="dr">
+        <div class="dh">
+          <h2 id="cart-title" style="font-size: 1.5rem">Your cart</h2>
+          <button class="ib" data-x="cart" aria-label="Close cart">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 3l16 16M19 3L3 19" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- STEP 1: the items in the cart -->
+        <div id="cstep1">
+          <div id="cl"></div>
+
+          <div id="ck" hidden>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.1rem;
+                margin: 1rem 0 0.4rem;
+              "
+            >
+              <b>SUBTOTAL</b><b id="ct"></b>
+            </div>
+            <p class="hint" style="margin-bottom: 1rem">
+              Delivery is added in the next step.
+            </p>
+            <button type="button" class="pill" id="go">Checkout</button>
+            <button type="button" class="pill o" id="clr">Clear cart</button>
+          </div>
+        </div>
+
+        <!--
+          STEP 2: checkout details
+          Customers fill this in and the order opens in WhatsApp.
+          DELIVERY OPTIONS: each <option> has a data-fee (the delivery price).
+          Change the names and fees to match what you charge, and copy an
+          <option> line to add another one. Use data-fee="0" for free.
+        -->
+        <form id="ckf" hidden>
+          <label>
+            Your name
+            <input name="nm" required autocomplete="name" />
+          </label>
+          <label>
+            Phone number
+            <input
+              name="ph"
+              type="tel"
+              required
+              minlength="9"
+              placeholder="07XX XXX XXX"
+              autocomplete="tel"
+            />
+          </label>
+          <label>
+            Delivery option
+            <select name="zone" id="zone" required>
+              <option value="" disabled selected>Choose an option</option>
+              <option value="Nairobi delivery" data-fee="300">
+                Nairobi delivery (KSh 300)
+              </option>
+              <option value="Outside Nairobi delivery" data-fee="600">
+                Outside Nairobi (KSh 600)
+              </option>
+              <option value="Pick up" data-fee="0">Pick up (free)</option>
+            </select>
+          </label>
+          <label>
+            Delivery location
+            <input
+              name="lc"
+              required
+              placeholder="Estate, street or landmark, and town"
+              autocomplete="street-address"
+            />
+          </label>
+          <label>
+            Preferred delivery date (optional)
+            <input name="dt" id="dt" type="date" />
+          </label>
+          <label>
+            Notes (optional)
+            <textarea
+              name="nt"
+              placeholder="Anything we should know? Gift note, framing, other sizes..."
+              style="min-height: 5rem"
+            ></textarea>
+          </label>
+
+          <div id="sum"></div>
+
+          <p class="hint">
+            Tapping the button opens WhatsApp with your order ready to send. We
+            confirm the total and payment with you there.
+          </p>
+          <p class="hint" id="sent" hidden style="color: var(--fg)">
+            Your order is open in WhatsApp. Press send there and we will confirm
+            with you.
+          </p>
+
+          <button type="submit" class="pill">Order on WhatsApp</button>
+          <button type="button" class="pill o" id="back">Back to cart</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ===== PRODUCT POPUP (filled in by script.js when a product is tapped) ===== -->
+    <div id="pm" hidden role="dialog" aria-label="Product">
+      <div class="md">
+        <div
+          style="grid-column: 1 / -1; display: flex; justify-content: flex-end"
+        >
+          <button class="ib" data-x="pm" aria-label="Close">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 3l16 16M19 3L3 19" />
+            </svg>
+          </button>
+        </div>
+        <div id="pmb" style="display: contents"></div>
+      </div>
+    </div>
+
+    <main id="top">
+      <!-- ===== HERO ===== -->
+      <div class="wrap hero">
+        <div>
+          <h1>Room decor for every mood</h1>
+          <p>
+            Posters, calendars and wall art for every taste, made to change how
+            your room feels.
+          </p>
+          <div class="cta">
+            <a class="pill" href="#shop">Shop collection</a>
+            <a class="pill o" href="#about">Our story</a>
+          </div>
+        </div>
+
+        <!-- HERO IMAGE: change the file name inside src to swap the photo -->
+        <img
+          class="hp"
+          id="hp"
+          src="images/poster layout.jpg"
+          alt="Room Rewrite posters laid out on a table"
+          width="615"
+          height="820"
+        />
+      </div>
+
+      <div class="trust">
+        <div class="wrap">
+          <div>Premium quality</div>
+          <div>Order on WhatsApp</div>
+          <div>Made to gift</div>
+        </div>
+      </div>
+
+     
+      <section id="calendar">
+        <div class="wrap">
+          <h2>2027 Wall Calendar</h2>
+          <p class="sub">New for the new year.</p>
+          <div class="row" id="calrow">
+            <a class="pc" href="#" data-id="9">
+              <span class="bd">New</span>
+              <img
+                class="ls"
+                src="images/slime you out calendar.jpeg"
+                alt="2027 Wall Calendar"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>2027 Wall Calendar</b>
+              </div>
+            </a>
+
+            <div
+              class="life"
+              style="
+                padding: 2rem;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 1rem;
+                background: var(--bg2);
+                border: 1px solid var(--line);
+              "
+            >
+              <h3 style="font-size: 1.9rem">Twelve months. One wall.</h3>
+              <p style="color: var(--muted); margin: 0">
+                Our 2027 wall calendar is here. Spiral bound and ready to hang.
+              </p>
+              <button class="pill" data-open="9">View calendar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TIKTOK ===== -->
+      <section
+        id="tiktok"
+        style="background: var(--bg2); border-block: 1px solid var(--line)"
+      >
+        <div class="wrap">
+          <h2>Follow us on TikTok</h2>
+          <p class="sub">New drops, room ideas &amp; behind the scenes</p>
+
+          <!--
+            VIDEOS AND PHOTO TILES
+            To add another one, copy a whole <div class="tc"> block
+            and change the file names and the label.
+            Videos: src = video file, poster = cover photo.
+          -->
+          <div class="tt" id="tt">
+            <!-- Video 1 -->
+            <div class="tc">
+              <video
+                src="videos/slime you out calendar.mp4"
+                poster="images/slime you out calendar.jpeg"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Behind the scenes"
+              ></video>
+              <div>
+                Behind the scenes
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#e11d2e"
+                  stroke-width="2.4"
+                >
+                  <path d="M10 18V5l9 2v4" />
+                  <circle cx="7" cy="18" r="3" />
+                  <circle cx="16" cy="14" r="3" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="tc">
+              <video
+                src="videos/poster showcase.MP4"
+                poster="images/poster layout.jpg"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="New drops"
+              ></video>
+              <div>
+                New drops
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#e11d2e"
+                  stroke-width="2.4"
+                >
+                  <path d="M10 18V5l9 2v4" />
+                  <circle cx="7" cy="18" r="3" />
+                  <circle cx="16" cy="14" r="3" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Photo tile 1 -->
+            <div class="tc">
+              <img
+                src="images/poster layout.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                Poster layout
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#e11d2e"
+                  stroke-width="2.4"
+                >
+                  <path d="M10 18V5l9 2v4" />
+                  <circle cx="7" cy="18" r="3" />
+                  <circle cx="16" cy="14" r="3" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Photo tile 2 -->
+            <div class="tc">
+              <img
+                src="images/jheneaiko art.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                Art prints
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#e11d2e"
+                  stroke-width="2.4"
+                >
+                  <path d="M10 18V5l9 2v4" />
+                  <circle cx="7" cy="18" r="3" />
+                  <circle cx="16" cy="14" r="3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <p class="sub" style="margin: 2rem 0 0">
+            <a
+              class="pill"
+              href="https://www.tiktok.com/@room_rewrite"
+              target="_blank"
+              rel="noopener"
+              >@room_rewrite on TikTok</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== SHOP ===== -->
+      <section id="shop">
+        <div class="wrap">
+          <h2>Shop the collection</h2>
+          <p class="sub">Tap any product to see sizes and prices.</p>
+
+          <!--
+            CATEGORY BUTTONS
+            data-c must match the data-cat of the products it should show.
+            To add a category, copy a button and use the same name in the
+            data-cat of your products.
+          -->
+          <div class="tabs" id="tabs" role="group" aria-label="Categories">
+            <button class="tab" data-c="All" aria-pressed="true">All</button>
+            <button class="tab" data-c="Anime" aria-pressed="false">
+              Anime
+            </button>
+            <button class="tab" data-c="Typography" aria-pressed="false">
+              Typography
+            </button>
+            <button class="tab" data-c="Art" aria-pressed="false">Art</button>
+            <button class="tab" data-c="Albums" aria-pressed="false">
+              Albums
+            </button>
+            <button class="tab" data-c="Calendars" aria-pressed="false">
+              Calendars
+            </button>
+          </div>
+
+         
+     
+          <div class="cards" id="cards">
+            <!-- Product 1 -->
+            <a
+              class="pc"
+              href="#"
+              data-id="1"
+              data-cat="Anime"
+              data-sizes="A5:100,A4:200,A3:300,A2:400,A1:500,A0:600
+              data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+              data-desc="A bold piece for your wall. Choose your size below."
+            >
+              <span class="bd">Best seller</span>
+              <img
+                src="images/gojo.jpg"
+                alt="Gojo Anime Poster"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>Gojo Anime Poster</b>
+              </div>
+            </a>
+
+            <!-- Product 2 -->
+            <a
+              class="pc"
+              href="#"
+              data-id="2"
+              data-cat="Anime"
+              data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+              data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+              data-desc="A bold piece for your wall. Choose your size below."
+            >
+              <img
+                src="images/eren freedom.jpg"
+                alt="Eren Freedom Pose"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>Eren Freedom Pose</b>
+              </div>
+            </a>
+
+            <!-- Product 3 -->
+            <a
+              class="pc"
+              href="#"
+              data-id="3"
+              data-cat="Anime"
+              data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+              data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+              data-desc="A bold piece for your wall. Choose your size below."
+            >
+              <span class="bd">New</span>
+              <img
+                src="images/toji.jpg"
+                alt="Toji Poster"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>Toji Poster</b>
+              </div>
+            </a>
+
+            <!-- Product 4 -->
+            <a
+              class="pc"
+              href="#"
+              data-id="4"
+              data-cat="Typography"
+              data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+              data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+              data-desc="A bold piece for your wall. Choose your size below."
+            >
+              <img
+                src="images/japanese set your heart ablaze.jpg"
+                alt="Kokoro wo Moyase Poster"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>Kokoro wo Moyase Poster</b>
+              </div>
+            </a>
+
+            <!-- Product 5 -->
+            <a
+              class="pc"
+              href="#"
+              data-id="5"
+              data-cat="Typography"
+              data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+              data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+              data-desc="A bold piece for your wall. Choose your size below."
+            >
+              <img
+                src="images/sword set your heart ablaze.jpg"
+                alt="Set Your Heart Ablaze Poster"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>Set Your Heart Ablaze Poster</b>
+              </div>
+            </a>
+
+            <!-- Product 6 -->
+            <a
+              class="pc"
+              href="#"
+              data-id="6"
+              data-cat="Art"
+              data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+              data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+              data-desc="A bold piece for your wall. Choose your size below."
+            >
+              <img
+                src="images/jheneaiko art.jpg"
+                alt="Jhene Aiko Art Poster"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>Jhene Aiko Art Poster</b>
+              </div>
+            </a>
+
+            <!-- Product 7 (has a second photo in the popup) -->
+            <a
+              class="pc"
+              href="#"
+              data-id="7"
+              data-cat="Albums"
+              data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+              data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+              data-photos="images/iceman tracklist.jpg"
+              data-desc="A bold piece for your wall. Choose your size below."
+            >
+              <span class="bd">Best seller</span>
+              <img
+                src="images/iceman poster.jpg"
+                alt="Iceman Album Poster"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>Iceman Album Poster</b>
+              </div>
+            </a>
+
+            <!-- Product 8 -->
+            <a
+              class="pc"
+              href="#"
+              data-id="8"
+              data-cat="Albums"
+              data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+              data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+              data-desc="A bold piece for your wall. Choose your size below."
+            >
+              <img
+                src="images/jhene aiko.jpg"
+                alt="Chilombo Album Poster"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>Chilombo Album Poster</b>
+              </div>
+            </a>
+
+            <!-- Product 9 (the calendar has no sizes, so it uses data-price) -->
+            <a
+              class="pc"
+              href="#"
+              data-id="9"
+              data-cat="Calendars"
+              data-price="2500"
+              data-old="3500"
+              data-desc="A bold piece for your wall. Spiral bound and ready to hang."
+            >
+              <span class="bd">New</span>
+              <img
+                class="ls"
+                src="images/slime you out calendar.jpeg"
+                alt="2027 Wall Calendar"
+                loading="lazy"
+                decoding="async"
+                width="300"
+                height="400"
+              />
+              <div class="pi">
+                <b>2027 Wall Calendar</b>
+              </div>
+            </a>
+
+            <!-- Shown by the search box when nothing matches -->
+            <p
+              class="sub"
+              id="nores"
+              style="grid-column: 1 / -1; display: none"
+            >
+              No products found.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
+     
+      <section id="feels" style="border-top: 1px solid var(--line)">
+        <div class="wrap">
+          <h2>Shop by feel</h2>
+          <p class="sub">Pick the mood you want for your room.</p>
+
+          <!-- Feel: Bold and Colourful -->
+          <div class="mood">
+            <h3>Bold &amp; Colourful</h3>
+            <p class="mood-sub">Loud colour and big personality.</p>
+            <div class="cards five">
+              <!-- Bubblegum Leopard Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="13"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7254.jpeg"
+                  alt="Bubblegum Leopard Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Bubblegum Leopard Poster</b>
+                </div>
+              </a>
+
+              <!-- Igor Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="14"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7253.jpeg"
+                  alt="Igor Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Igor Poster</b>
+                </div>
+              </a>
+
+              <!-- Graffiti Portrait Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="15"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7257.jpeg"
+                  alt="Graffiti Portrait Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Graffiti Portrait Poster</b>
+                </div>
+              </a>
+
+              <!-- Starry Eyes Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="16"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7249.jpeg"
+                  alt="Starry Eyes Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Starry Eyes Poster</b>
+                </div>
+              </a>
+
+              <!-- Sleepy Eyes Art Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="17"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7252.jpeg"
+                  alt="Sleepy Eyes Art Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Sleepy Eyes Art Poster</b>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Feel: Soulful and Cultural -->
+          <div class="mood">
+            <h3>Soulful &amp; Cultural</h3>
+            <p class="mood-sub">Warm tones, heritage and heart.</p>
+            <div class="cards five">
+              <!-- Soul Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="18"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7251.jpeg"
+                  alt="Soul Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Soul Poster</b>
+                </div>
+              </a>
+
+              <!-- Soul Too Deep Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="19"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7256.jpeg"
+                  alt="Soul Too Deep Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Soul Too Deep Poster</b>
+                </div>
+              </a>
+
+              <!-- Beaded Braids Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="20"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7248.jpeg"
+                  alt="Beaded Braids Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Beaded Braids Poster</b>
+                </div>
+              </a>
+
+              <!-- Tribal Red Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="21"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7255.jpeg"
+                  alt="Tribal Red Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Tribal Red Poster</b>
+                </div>
+              </a>
+
+              <!-- Sun Locs Painting Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="22"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7250.jpeg"
+                  alt="Sun Locs Painting Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Sun Locs Painting Poster</b>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Feel: Empowering -->
+          <div class="mood">
+            <h3>Empowering</h3>
+            <p class="mood-sub">
+              Posters that lift you up every time you look at them.
+            </p>
+            <div class="cards five">
+              <!-- Women's Rights Are Human Rights Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="23"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7236.jpeg"
+                  alt="Women&#39;s Rights Are Human Rights Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Women&#39;s Rights Are Human Rights Poster</b>
+                </div>
+              </a>
+
+              <!-- You Are Silhouette Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="24"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7237.jpeg"
+                  alt="You Are Silhouette Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>You Are Silhouette Poster</b>
+                </div>
+              </a>
+
+              <!-- You Are Line Art Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="25"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7238.jpeg"
+                  alt="You Are Line Art Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>You Are Line Art Poster</b>
+                </div>
+              </a>
+
+              <!-- Be The Reason Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="26"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7245.jpeg"
+                  alt="Be The Reason Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Be The Reason Poster</b>
+                </div>
+              </a>
+
+              <!-- Be The Woman You Look Up To Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="27"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7241.jpeg"
+                  alt="Be The Woman You Look Up To Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Be The Woman You Look Up To Poster</b>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Feel: Words to Live By -->
+          <div class="mood">
+            <h3>Words to Live By</h3>
+            <p class="mood-sub">
+              Handwritten and bold quotes with something to say.
+            </p>
+            <div class="cards five">
+              <!-- Plot Twist Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="28"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7242.jpeg"
+                  alt="Plot Twist Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Plot Twist Poster</b>
+                </div>
+              </a>
+
+              <!-- Wildly Passionate Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="29"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7243.jpeg"
+                  alt="Wildly Passionate Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Wildly Passionate Poster</b>
+                </div>
+              </a>
+
+              <!-- When Women Speak Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="30"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7247.jpeg"
+                  alt="When Women Speak Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>When Women Speak Poster</b>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Feel: Calm and Vintage -->
+          <div class="mood">
+            <h3>Calm &amp; Vintage</h3>
+            <p class="mood-sub">Soft, quiet and a little nostalgic.</p>
+            <div class="cards five">
+              <!-- Ivy Plant Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="31"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7246.jpeg"
+                  alt="Ivy Plant Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Ivy Plant Poster</b>
+                </div>
+              </a>
+
+              <!-- Carpe Diem Poster -->
+              <a
+                class="pc"
+                href="#"
+                data-id="32"
+                data-sizes="A5:1000,A4:1500,A3:2200,A2:3200,A1:4500,A0:6500"
+                data-framed="A5:1800,A4:2800,A3:3800,A2:5500,A1:8000,A0:11000"
+                data-desc="A bold piece for your wall. Choose your size below."
+              >
+                <img
+                  src="images/IMG_7240.jpeg"
+                  alt="Carpe Diem Poster"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="400"
+                />
+                <div class="pi">
+                  <b>Carpe Diem Poster</b>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== REVIEWS ===== -->
+      <!--
+        To show this section, delete the word "hidden" below and add reviews
+        inside the "rvl" div, like this:
+        <blockquote>Love it<br /><b>Name</b></blockquote>
+        The section appears by itself once there is at least one review.
+      -->
+      <section id="reviews" hidden style="padding-top: 0">
+        <div class="wrap">
+          <h2>What customers say</h2>
+          <p class="sub">Real words from real orders.</p>
+          <div class="rv" id="rvl"></div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section id="about" style="border-top: 1px solid var(--line)">
+        <div class="wrap about">
+          <div>
+            <h2>About Room Rewrite</h2>
+            <p>
+              Room Rewrite began with a simple idea: your room should feel like
+              you. We bring together posters, calendars and wall art that set a
+              mood, from the print above your bed to the calendar by your desk.
+            </p>
+            <p>
+              Every piece is chosen for the way it looks and the way it fits the
+              rest of your space. Message us any time and we will help you pick
+              the right pieces.
+            </p>
+          </div>
+          <div class="vals">
+            <div>
+              <b>Chosen with care</b>
+              <span>Each product is picked for quality and style.</span>
+            </div>
+            <div>
+              <b>Made for your mood</b>
+              <span>Bold, calm, or somewhere in between.</span>
+            </div>
+            <div>
+              <b>Easy to order</b>
+              <span>Add to cart and send your order on WhatsApp.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FAQ ===== -->
+      <section id="faq" style="padding-top: 0">
+        <div class="wrap">
+          <h2>Got questions?</h2>
+          <p class="sub">Quick answers before you order.</p>
+
+          <details>
+            <summary>How do I order?</summary>
+            <p>
+              Tap a product, choose your finish (normal print or framed) and
+              size, and add it to your cart. Then tap Checkout, fill in your
+              delivery details and tap Order on WhatsApp. Your order opens in
+              WhatsApp ready for you to send.
+            </p>
+          </details>
+          <details>
+            <summary>How do I pay?</summary>
+            <p>
+              We confirm the total and payment options with you on WhatsApp
+              before anything is sent.
+            </p>
+          </details>
+          <details>
+            <summary>Where do you deliver?</summary>
+            <p>
+              Choose a delivery option and give us your location at checkout and
+              we will confirm delivery timing for your area.
+            </p>
+          </details>
+          <details>
+            <summary>Can you help me choose?</summary>
+            <p>
+              Of course. Tell us the mood you want and the size of your wall,
+              and we will suggest pieces that work together.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <div>
+            <h2>Contact us</h2>
+            <p class="sub">
+              Ask us anything or tell us what you would like to order.
+            </p>
+            <form id="cf">
+              <label>
+                Name
+                <input name="name" required autocomplete="name" />
+              </label>
+              <label>
+                Email
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                />
+              </label>
+              <label>
+                Message
+                <textarea name="msg" required></textarea>
+              </label>
+              <button class="pill" type="submit">Send message</button>
+            </form>
+          </div>
+
+          <div class="ways">
+            <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem">Find us</h2>
+            <p>
+              <b>WhatsApp</b>
+              <a
+                href="https://wa.me/254769694897"
+                target="_blank"
+                rel="noopener"
+                >0769 694 897</a
+              >
+            </p>
+            <p>
+              <b>Email</b>
+              <a href="mailto:vicohawi@gmail.com">vicohawi@gmail.com</a>
+            </p>
+            <p>
+              <b>TikTok</b>
+              <a
+                href="https://www.tiktok.com/@room_rewrite"
+                target="_blank"
+                rel="noopener"
+                >@room_rewrite</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="wrap">
+        <div>
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          &copy; <span id="yr">2026</span> Room Rewrite. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <button id="top-btn" aria-label="Back to top">
+      <svg
+        width="22"
+        height="22"
+        viewBox="0 0 22 22"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
+        <path d="M4 14l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
